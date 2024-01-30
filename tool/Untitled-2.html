@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <img id="mypic" onclick="slideshow()" src="scrapingnote1.jpg" width="1200" height="900">
+            <script>
+            var pics_src = new Array("scrapingnote1.jpg","scrapingnote2.jpg","scrapingpage.png");
+            var num = 0;
+
+            function slideshow(){
+                if (num == 2) {
+                    num = 0;
+                }
+                else {
+                    num ++;
+                }
+                document.getElementById("mypic").src=pics_src[num];
+            }
+            </script>
+    </body>
+    <div class="example3">
+        <button type="button"onclick="location.href='ToolStart.html'" class="gazo1">
+            <img alt="Button1 Image">
+    </div>
+</html>

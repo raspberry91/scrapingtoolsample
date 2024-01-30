@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>スタート画面</title>
+  <style>
+    button.gazo {
+        width: 10em;
+        height:10em;
+    }
+    button.gazo1 img  {
+      content: url("StartButton.png");
+      margin: auto;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      display: block;
+    }
+    button.gazo2 img  {
+      content: url("AccountButton.png");
+      display: block;
+      margin: auto;
+      text-align: center;
+      display: inline-block;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <button type="button" onclick="location.href='NoteChoice.html'" class="gazo1">
+    <img alt="Button1 Image">
+  </button>
+  <br>
+  <button type="button" class="gazo2">
+    <img alt="Button2 Image">
+  </button>
+</body>
+</html>

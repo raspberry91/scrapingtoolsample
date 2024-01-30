@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>スクレイピングページ画面</title>
+    <body>
+        <img id="mypic" onclick="slideshow()" src="note1.jpg" width="1200" height="900" display=flex align-items=center justify-content=center padding=10px margin-top=10px>
+            <script>
+            var pics_src = new Array("note1.jpg","note2.jpg","note3.jpg","note4.jpg","note5.jpg");
+            var num = 0;
+
+            function slideshow(){
+                if (num == 4) {
+                    num = 0;
+                }
+                else {
+                    num ++;
+                }
+                document.getElementById("mypic").src=pics_src[num];
+            }
+            </script>
+    <style>
+        .example3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        margin-top:10px;
+        }
+        button.gazo1 img  {
+          content: url("ViewingEnd.png");
+          height: 100%;
+          display: inline-block;
+        }
+    </style>
+    </body>
+    <div class="example3">
+        <button type="button"onclick="location.href='ToolStart.html'" class="gazo1">
+            <img alt="Button1 Image">
+    </div>
+</html>
